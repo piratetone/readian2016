@@ -1,14 +1,22 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Label:</strong>
-  <%= @link.label %>
-</p>
+	<p>
+	  <strong>Title:</strong>
+	  <%= @link.title %>
+	</p>
 
-<%= link_to 'Edit', edit_link_path(@link) %> |
-<%= link_to 'Back', links_path %>
+	<p>
+	  <strong>URL:</strong>
+	  <%= @link.url %>
+	</p>
+
+	<p>
+	  <strong>Label:</strong>
+	  <%= @link.label %>
+	</p>
+
+	<%= link_to 'Edit', edit_link_path(@link) %> |
+	<%= link_to 'Back', links_path %>
+</div>
